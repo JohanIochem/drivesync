@@ -1,113 +1,64 @@
 <div class="container">
 
-  <p>En espérant que le contenu de DriveSync vous apporte une entière satisfaction. </p>
+  <!-- Contenu principal -->
+  <p>En espérant que le contenu de DriveSync vous apporte une entière satisfaction 😉.</p>
 
-  <div class="container">
-    <div class="raw">
-      <h3 class="text-center">Voiture électrique ⚡ </h3>
-      <div *ngFor="let car of evcars">
-        <p>{{ car.brand }} - {{ car.model }}</p>
+  <!-- Conteneur des cartes -->
+  <div class="row">
+
+    <div class="col-md-8">
+      <div class="card mb-4">
+        <div class="card-body bg-dark rounded-lg">
+          <h3 class="card-title text-center mb-3">Voitures électriques ⚡</h3>
+          <!-- Boucle sur les voitures électriques -->
+          <div *ngFor="let car of evcars" class="mb-2">
+            <p class="card-text">{{ car.brand }} - {{ car.model }}</p>
+          </div>
+          <button class="btn btn-outline-primary btn-block" type="button">En savoir plus</button>
+        </div>
       </div>
     </div>
-    <h3 class="text-center">
-      Voiture Hybride
-    </h3>
-    <div *ngFor="let car of hcars">
-      <p>{{car.brand}} - {{ car.model}}</p>
+
+    <!-- Carte pour les voitures hybrides (plus petite) -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body bg-dark rounded-lg">
+          <h3 class="card-title text-center mb-3">Voitures hybrides 🌿</h3>
+          <!-- Boucle sur les voitures hybrides -->
+          <div *ngFor="let car of hcars" class="mb-2">
+            <p class="card-text">{{ car.brand }} - {{ car.model }}</p>
+          </div>
+          <!-- Bouton "En savoir plus" -->
+          <button class="btn btn-outline-primary btn-block" type="button">En savoir plus</button>
+        </div>
+      </div>
     </div>
+
+    <!-- Carte supplémentaire avec le même style -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body bg-dark rounded-lg">
+          <h3 class="card-title text-center mb-3">Autres voitures 🚗</h3>
+          <!-- Contenu de la carte supplémentaire -->
+          <p class="card-text">Contenu de la carte supplémentaire.</p>
+          <!-- Bouton "En savoir plus" -->
+          <button class="btn btn-outline-primary btn-block" type="button">En savoir plus</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte supplémentaire avec le même style -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body bg-dark rounded-lg">
+          <h3 class="card-title text-center mb-3">Autres voitures 🚗</h3>
+          <!-- Contenu de la carte supplémentaire -->
+          <p class="card-text">Contenu de la carte supplémentaire.</p>
+          <!-- Bouton "En savoir plus" -->
+          <button class="btn btn-outline-primary btn-block" type="button">En savoir plus</button>
+        </div>
+      </div>
+    </div>
+
   </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="card card-margin">
-          <div class="card-header no-border">
-            <h5 class="card-title">MOM</h5>
-          </div>
-          <div class="card-body pt-0">
-            <div class="widget-49">
-              <div class="widget-49-title-wrapper">
-                <div class="widget-49-date-primary">
-                  <span class="widget-49-date-day">09</span>
-                  <span class="widget-49-date-month">apr</span>
-                </div>
-                <div class="widget-49-meeting-info">
-                  <span class="widget-49-pro-title">PRO-08235 DeskOpe. Website</span>
-                  <span class="widget-49-meeting-time">12:00 to 13.30 Hrs</span>
-                </div>
-              </div>
-              <ol class="widget-49-meeting-points">
-                <li class="widget-49-meeting-item"><span>Expand module is removed</span></li>
-                <li class="widget-49-meeting-item"><span>Data migration is in scope</span></li>
-                <li class="widget-49-meeting-item"><span>Session timeout increase to 30 minutes</span></li>
-              </ol>
-              <div class="widget-49-meeting-action">
-                <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card card-margin">
-          <div class="card-header no-border">
-            <h5 class="card-title">MOM</h5>
-          </div>
-          <div class="card-body pt-0">
-            <div class="widget-49">
-              <div class="widget-49-title-wrapper">
-                <div class="widget-49-date-warning">
-                  <span class="widget-49-date-day">13</span>
-                  <span class="widget-49-date-month">apr</span>
-                </div>
-                <div class="widget-49-meeting-info">
-                  <span class="widget-49-pro-title">PRO-08235 Lexa Corp.</span>
-                  <span class="widget-49-meeting-time">12:00 to 13.30 Hrs</span>
-                </div>
-              </div>
-              <ol class="widget-49-meeting-points">
-                <li class="widget-49-meeting-item"><span>Scheming module is removed</span></li>
-                <li class="widget-49-meeting-item"><span>App design contract confirmed</span></li>
-                <li class="widget-49-meeting-item"><span>Client request to send invoice</span></li>
-              </ol>
-              <div class="widget-49-meeting-action">
-                <a href="#" class="btn btn-sm btn-flash-border-warning">View All</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card card-margin">
-          <div class="card-header no-border">
-            <h5 class="card-title">MOM</h5>
-          </div>
-          <div class="card-body pt-0">
-            <div class="widget-49">
-              <div class="widget-49-title-wrapper">
-                <div class="widget-49-date-success">
-                  <span class="widget-49-date-day">22</span>
-                  <span class="widget-49-date-month">apr</span>
-                </div>
-                <div class="widget-49-meeting-info">
-                  <span class="widget-49-pro-title">PRO-027865 Opera module</span>
-                  <span class="widget-49-meeting-time">12:00 to 13.30 Hrs</span>
-                </div>
-              </div>
-              <ol class="widget-49-meeting-points">
-                <li class="widget-49-meeting-item"><span>Scope is revised and updated</span></li>
-                <li class="widget-49-meeting-item"><span>Time-line has been changed</span></li>
-                <li class="widget-49-meeting-item"><span>Received approval to start wire-frame</span></li>
-              </ol>
-              <div class="widget-49-meeting-action">
-                <a href="#" class="btn btn-sm btn-flash-border-success">View All</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
 </div>

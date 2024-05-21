@@ -1,3 +1,8 @@
-<div class="animated-text">
-  <span *ngFor="let char of text.split('')" #animatedLetter>{{ char }}</span>
+<div class="container">
+  <div class="animated-text">
+    <h1 *ngFor="let char of text.split('')" #animatedLetter>{{ char }}</h1>
+    <br>
+  </div>
 </div>
+
+

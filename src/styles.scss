@@ -1,3 +1,17 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+body {
+  background-color: #f9f7f3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4361ee;
+  font-weight: lighter;
+}
+
+p {
+  color: #4361ee;
+  font-weight: lighter;
+}

@@ -435,4 +435,16 @@ body{
   border-top-right-radius: 4px;
 }
 
+h3 {
+  filter: drop-shadow(10px 7px 10px #d00000);
+  color: #ffffff;
+ }
+
+.card-body.bg-dark {
+  border-radius: 20px;
+}
+
+
+
+
 

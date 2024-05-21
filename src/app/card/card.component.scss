@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   font-size: 2rem;
-  span {
+  h1 {
     display: inline-block;
+    filter: drop-shadow(10px 7px 10px #d90429);
   }
 }

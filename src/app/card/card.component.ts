@@ -12,7 +12,7 @@ import {NgForOf} from "@angular/common";
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements AfterViewInit {
-  text: string = 'Bienvenue sur mon site';
+  text: string = 'Bienvenue sur Drive Sync';
 
   @ViewChildren('animatedLetter') letters: QueryList<ElementRef> = new QueryList<ElementRef>();  // Initialiser comme un tableau vide
 
@@ -21,8 +21,8 @@ export class CardComponent implements AfterViewInit {
   ngAfterViewInit() {
     const lettersArray = this.letters.toArray().map(el => el.nativeElement);
     gsap.fromTo(lettersArray, { opacity: 0, y: 50 }, {
-      opacity: 1,
-      y: 0,
+      opacity: 10,
+      y: 10,
       stagger: 0.05,
       duration: 0.5
     });
